@@ -7,8 +7,4 @@ Indice
 .[Aula 1](#aula1)
 .[Aula 2](#aula2)
 Instalação
-Passos para instalar e configurar o projeto:
-git clone https://github.com/Andrei-Cardozo/aulasT27-webdev-2024
-cd projeto
-npm install.
 
