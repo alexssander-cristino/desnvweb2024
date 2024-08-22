@@ -1,0 +1,12 @@
+div {
+    margin: 1em;
+    background-color: gray;
+}
+
+div.componente_nome {
+    background-color: cornflowerblue;
+}
+
+label {
+    margin-left: 3em;
+}
