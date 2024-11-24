@@ -1,0 +1,220 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Estilo do título principal */
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Estilo dos subtítulos */
+h2 {
+    color: #444;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilo do formulário */
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 auto 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Limita a largura do formulário */
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Ajusta os botões */
+form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Estilo para os formulários dentro da tabela */
+td form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+td form input,
+td form select {
+    width: calc(50% - 10px); /* Tira um pouco de largura para que fiquem lado a lado */
+}
+
+/* Ajuste dos campos: Nome, Setor e Status */
+td .name_,
+td .setor_,
+td .status_ {
+    display: flex;
+    justify-content: space-between; /* Garante que o nome esteja à esquerda e a opção à direita */
+    width: 100%;
+}
+
+td .name_ label,
+td .setor_ label,
+td .status_ label {
+    width: 30%; /* Defina a largura dos rótulos para que ocupem 30% do espaço */
+    text-align: left;
+    font-weight: bold;
+}
+
+td .name_ select,
+td .setor_ select,
+td .status_ select {
+    width: 60%; /* As opções (select) ocupam 60% do espaço */
+    margin-left: 10px; /* Deixa um pequeno espaço entre o rótulo e a opção */
+}
+
+/* Ajuste dos botões de ação */
+button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #28a745; /* Verde para o botão "Editar" */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: auto;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; /* Tom de verde mais escuro no hover */
+}
+
+button[type="submit"]:focus {
+    outline: none;
+}
+
+/* Estilo do botão "Excluir" */
+button[type="submit"][onclick] {
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: auto;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"][onclick]:hover {
+    background-color: #c82333;
+}
+
+button[type="submit"][onclick]:focus {
+    outline: none;
+}
+
+button[type="button"][onclick] {
+    padding: 8px 16px;
+    width: 12vh;
+    font-size: 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="button"][onclick]:hover {
+    background-color: #0056b3;
+}
+
+/* Modal */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo transparente */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Estilo para o botão de fechar */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

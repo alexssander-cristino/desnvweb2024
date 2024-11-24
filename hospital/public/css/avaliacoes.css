@@ -1,0 +1,65 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para a tabela */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+/* Estilo para mensagem quando não há avaliações */
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}

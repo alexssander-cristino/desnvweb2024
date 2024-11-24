@@ -1,0 +1,176 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilo para mensagens de erro e sucesso */
+.message {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.message.error {
+    color: red;
+}
+
+.message.success {
+    color: green;
+}
+
+/* Estilos do formulário */
+.form-container {
+    background-color: #fff;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select,
+textarea,
+button {
+    width: 99%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    align-items: center;
+}
+
+select {
+    background-color: #fff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Botão do formulário */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos da tabela de perguntas */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+/* Estilo para o status das perguntas */
+.status-ativa {
+    color: #4CAF50; /* verde */
+    font-weight: bold;
+}
+
+.status-inativa {
+    color: #f44336; /* vermelho */
+    font-weight: bold;
+}
+
+/* Estilo para os links de ação */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Estilos para a navegação entre páginas */
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    select,
+    textarea,
+    button {
+        font-size: 14px;
+    }
+}
+
